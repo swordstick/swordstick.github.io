@@ -1,0 +1,18 @@
+/* Custom back to top CSS style  */
+.mytotop {
+   position: fixed;
+   bottom: 150px;
+   right: 50px;
+   cursor: pointer;
+}
+
+/* Custom linkedin CSS style  */
+.mylinkedin {
+   border: 0px;
+   height: 15px;
+   width: 80px;
+   position: absolute;
+   margin-left: 160px;
+   margin-top: -20px;
+   vertical-align: baseline;
+}

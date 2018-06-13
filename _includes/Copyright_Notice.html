@@ -1,0 +1,28 @@
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>{{ site.locales[site.default_locale].Copyright_Notice }}</h4>
+
+  {% if site.default_locale == "cn" %}
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">
+    <img alt="Copyright Notice" src="https://dbathread.com/images/Cc_by-nc-nd_euro_icon.svg.png" title="Copyright Notice" height="42px" width="120px" border="0"/>
+  </a>
+
+<!--
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">署名-非商业性使用-禁止演绎</a>
+!-->
+
+  {% else %}
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="https://dbathread.com/images/Cc_by-nc-nd_euro_icon.svg.png" title="Copyright Notice" height="42px" width="120px" border="0"/>
+  </a>
+
+<!--
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+!-->
+
+  {% endif %}
+
+</div>

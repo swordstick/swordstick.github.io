@@ -1,0 +1,73 @@
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>
+   {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+   {% elsif post.title %}
+      {{ post.title }} | {{ site.title }}
+   {% else %}
+      {{ site.title }} | {{ site.tagline }}
+   {% endif %}
+</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="keywords" content="{{ site.keywords }}">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="https://dbathread.com/" />
+<meta property="og:image" content="https://dbathread.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.twitter_username }}">
+<meta name="twitter:creator" content="@{{ site.twitter_username }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+<link rel="icon" href="{{site.favicon| prepend:site.baseurl}}">
+<link rel="stylesheet" href="{{ "https://dbathread.com/css/main.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="https://dbathread.com/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://dbathread.com/assets/css/robin.css">
+<!--
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+-->
+<link rel="canonical" href="{{ page.url | replace:'index.html','' |  prepend: site.url }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
+
+<!-- Force using https. -->
+<script type="text/javascript">
+    var host = "dbathread.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
+<!-- Google Adsense. -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3101170268085793",
+    enable_page_level_ads: true
+  });
+</script>
+
+<!-- GoStats JavaScript Based Code -->
+<div style="display:none">
+<script type="text/javascript" src="https://ssl.gostats.com/js/counter.js"></script>
+<script type="text/javascript">_gos='monster.gostats.cn';_goa=482888;
+_got=5;_goi=1;_gol='流量统计分析';_GoStatsRun();</script>
+<noscript><a target="_blank" title="流量统计分析" 
+href="http://gostats.cn"><img alt="流量统计分析" 
+src="https://ssl.gostats.com/bin/count/a_482888/t_5/i_1/ssl_monster.gostats.cn/counter.png" 
+style="border-width:0" /></a></noscript>
+</div>
+<!-- End GoStats JavaScript Based Code -->
+
+{% include google_search.js %}
+
+</head>

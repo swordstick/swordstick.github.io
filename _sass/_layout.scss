@@ -1,0 +1,305 @@
+/**
+ * Site header
+ */
+.site-header {
+  //Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  font-size: 36px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  text-align:left;
+  a{
+    &,
+    &:visited
+    &:hover {
+      color: $brand-top-color; //$grey-color-dark
+      border-bottom: 0px dotted;
+      text-decoration: none;
+    }
+  }
+}
+
+.site-meta{
+  font-size: 16px;
+  line-height:56px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  text-align:left; 
+  color: $grey-color;
+
+  @include media-query($on-laptop) {
+      font-size: 14px;
+  }  
+}
+
+.site-nav {
+  /*float: right;*/
+  line-height: 56px;
+  border-top: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-color-light;
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $grey-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the first one
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+  a{
+    text-decoration: none;
+
+    &:hover {
+      color: $text-color;
+      text-decoration: none;
+      //font-weight: bold;
+    }
+  }
+
+
+  @include media-query($on-palm) {
+    position: relative;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: center;
+
+    .menu-icon {
+      display: block;
+      line-height: 0;
+      text-align: center;
+
+      > svg {
+        width: 18px;
+        height: 30px;
+
+        path {
+          fill: $grey-color-dark;
+        }
+      }
+    }
+
+    .trigger {
+      clear: both;
+      display: none;
+    }
+
+    &:hover .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+    }
+  }
+
+}
+
+/**
+ * Sidebar
+ */
+.sidebar-module {
+  padding: 10px;
+  margin: 0 -10px 10px;
+  font-size: 16px;
+  h4{
+    font-size: $base-font-size;
+    font-weight: bold;
+    color: $grey-color-dark;
+  }
+  li{
+    list-style: none; 
+  }
+
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+  clear: both;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid $grey-color-light;
+  margin: $spacing-unit 0; 
+  padding: $spacing-unit 0;
+  font-size: 14px;
+}
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+  strong { font-weight: bold; }
+
+}
+
+.page-heading {
+  font-size: 20px;
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  font-size: 28px;//42px;
+}
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+  time{
+      margin-left: 0px;
+      font-style: normal;
+   }
+}
+
+.post-title {
+  font-size: 28px;//42px;
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    font-size: 24px;
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+  font-size: 16px;
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5em;
+  }
+
+  h1 { 
+    font-size: 2em;
+
+    @include media-query($on-laptop){
+      font-size: 1.8em;
+    }
+
+  }
+  h2 {
+    font-size: 1.8em;
+
+    @include media-query($on-laptop) {
+      font-size: 1.6em;
+    }
+  }
+
+  h3 {
+    font-size: 1.6em;
+
+    @include media-query($on-laptop) {
+      font-size: 1.4em;
+    }
+  }
+
+  h4 {
+    font-size: 1.4em;
+
+    @include media-query($on-laptop) {
+      font-size: 1.2em;
+    }
+  }
+
+  h5 {
+    font-size: 1.2em;
+
+    @include media-query($on-laptop) {
+      font-size: 1em;
+    }
+  }
+
+  h6 {
+    font-size: 1.2em;
+
+    @include media-query($on-laptop) {
+      font-size: 1em;
+    }
+  }
+}
+
+/**
+ * Pagination Style
+ */
+
+.pager{
+  margin-bottom: 60px;
+  text-align: center;
+  ul { display: block; margin: 20px 0; }
+  li{list-style: none;}
+  li.previous a{float:left;}
+  li.next a{float:right;}
+  li.disabled {display:none;}
+}
+
+/**
+ * Tags and Categories Style
+ */
+
+.tags-box{
+  li {
+    list-style: none;
+    font-weight: bold;
+    margin-top:10px;
+  }
+  .size{
+    font-size: 0.7em; font-weight: bold; vertical-align: super;
+  }
+}
+
+/*time style of tages and categories*/
+
+time{
+  margin-left: 15px;
+  font-style: italic;
+}
+
+/**
+ * Aboutme photo Style
+ */
+
+.about{
+  img {
+    height: 128px;
+    width: 128px;
+    border-radius:50%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/**
+ * New style for quotation.
+ */
+
+q:before {
+  content: '『';
+  color: #DD1144;
+  font-weight:bold;
+}
+q:after {
+  content:'』';
+  color: #DD1144;
+  font-weight:bold;
+}
