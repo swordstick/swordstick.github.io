@@ -11,6 +11,4 @@ tags:
 
 这是 **万东波的居屋** 的第一篇文章，你好，世界。
 
-``` bash
-date
-```
+<center><embed src="/pdf/mysql-kernel.pdf" width="850" height="600"></center>
