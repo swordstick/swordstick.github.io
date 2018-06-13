@@ -37,10 +37,6 @@ Installation via git clone or download this repo.
 * [commentit, Guillaume Roye](https://github.com/guilro/commentit)
 * [Donate Page, Kaiyuan Xie](https://github.com/Kaiyuan/donate-page)
 
-## Preview
-
-![Screenshots of dbathread.com at 2017.02.26](https://dbathread.com/images/dbathread.com.screenshots.170226.png)
-
 ## Contact
 
 dbarobinwen@gmail.com
