@@ -16,6 +16,9 @@ redis补丁,增加名为durationlog的模块。<br>
 用于收集进入slow日志的操作，底层调用过程中耗时情况。目标是填补slow + lantency 监控的盲区.<br>
 目前补丁针对redis 3.0.7 及 3.0.5版本。
 
+[REDIS-DURATIONLOG-PATCH 项目GITHUB地址][1]
+
+
 ## 安装
 
 
@@ -118,3 +121,5 @@ OK
 
 swordstick<br>
 www.dbathread.com
+
+[1]:https://github.com/swordstick/redis-durationlog-patch

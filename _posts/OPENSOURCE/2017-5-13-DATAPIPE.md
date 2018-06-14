@@ -15,6 +15,7 @@ MYSQL数据变形同步工具。<br>
 支持MYSQL之间完成初始化，同步推送。<br>
 从源库中抽取快照数据和变更操作，表名变更和字段过滤之后，同步到其他的MYSQL。<br>
 
+[DATAPIPE项目GITHUB地址][1]
 
 ## 安装
 
@@ -149,3 +150,5 @@ Target = "wp_posts5"
 
 swordstick<br>
 www.dbathread.com
+
+[1]:https://github.com/swordstick/mysql-datapipe
