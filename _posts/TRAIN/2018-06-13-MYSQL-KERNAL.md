@@ -17,9 +17,8 @@ PDF是为期3个月使用的培训材料，主要内容是实例和引擎层的�
 考虑到网速不同，分别在Github和七牛保存一份。
 
 国内(七牛)<br>
-[MYSQL内核技术培训材料-点击阅读或下载][PDF]
+[MYSQL内核技术培训材料-点击阅读或下载](http://orxb6fkuo.bkt.clouddn.com/MYSQL%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E5%9F%B9%E8%AE%ADPPT.pdf)
 
 GITHUB
 <center><embed src="/pdf/mysql-kernel.pdf" width="700" height="700"></center>
 
-[PDF]:[http://orxb6fkuo.bkt.clouddn.com/MYSQL%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E5%9F%B9%E8%AE%ADPPT.pdf]
