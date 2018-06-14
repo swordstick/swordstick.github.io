@@ -2,23 +2,14 @@
 published: true
 author: David Wan
 layout: post
-title: DB服务化方案(MHA NODE&MANAGER部署)
-category: Other
-summary: Hello World
+title: DB服务化方案(MHA NODE&MANAGER)
+category: CONSUL
+summary: MHA NODE&MANAGER部署
 tags:
   - Other
-comments:
-  - author:
-      type: full
-      displayName: dbarobin
-      url: 'https://github.com/dbarobin'
-      picture: 'https://avatars1.githubusercontent.com/u/3949252?v=4&s=73'
-    content: Well done
-    date: 2018-06-13T14:44:25.732Z
 
 ---
 
-# MHA NODE&MANAGER部署
 
 
 ## 知识准备
