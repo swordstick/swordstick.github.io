@@ -33,4 +33,4 @@ title: About this blog
 
 ## 联系方式 ##
 
-<a href="mailto:dbarobinwen@gmail.com"><img src="http://i.imgur.com/7yOaC7C.png" title="Robin's Gmail" border="0" alt="Robin's Gmail" /></a>
+<a href="mailto:blockxyz@gmail.com"><img src="http://i.imgur.com/7yOaC7C.png" title="Robin's Gmail" border="0" alt="Robin's Gmail" /></a>
