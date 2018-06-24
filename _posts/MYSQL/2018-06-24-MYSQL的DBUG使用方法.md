@@ -170,7 +170,7 @@ static int process_io_rotate(Master_info *mi, Rotate_log_event *rev)
 
 #### 查看对应的TRACE内容
 
->```debug="d:F:i:L:n:N:o,/tmp/mysqld.trace:t"```为例<br>
+>```debug="d:F:i:L:n:N:o,/tmp/mysqld.trace:t"```为例
 >若指定位置没有mysqld.trace文件，请查看mysql的error文件
 
 
@@ -202,7 +202,7 @@ T@5    :  1081:       slave.cc:  3716:    3: | | <process_io_rotate 3716
 | ---  |
 |	```DBUG_ENTER("process_io_rotate")```|
 |```T@5    :  1064:       slave.cc:  3678:    3: | | >process_io_rotate```|
-|	```  DBUG_PRINT("info", ("master_log_pos: '%s' %lu",mi->master_log_name, (ulong) mi->master_log_pos));```|
+|	```DBUG_PRINT("info", ("master_log_pos: '%s' %lu",mi->master_log_name,(ulong) mi->master_log_pos));```|
 |	```T@5    :  1065:       slave.cc:  3688:    3: | | | info: master_log_pos: 'binlog.000090' 350962597```|
 |	```DBUG_RETURN(rotate_relay_log(mi) /* will take the right mutexes */);```|
 |```T@5    :  1081:       slave.cc:  3716:    3: | | <process_io_rotate 3716```|
