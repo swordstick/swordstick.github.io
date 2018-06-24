@@ -76,7 +76,7 @@ DBUG参数首先以':'作为分割,其中field_n代表了某类选项，也就�
 ### 相关flag及modifier列表
 
 | Flag | Dscription | 
-|	---	|	---			|
+| ---	| --- |
 |	d	|		Enable output from DBUG_XXX macros for the current state. May be followed by a list of keywords, which enables output only for the DBUG macros with that keyword. An empty list of keywords enables output for all macros.In MySQL, common debug macro keywords to enable are enter, exit, error, warning, info, and loop.|
 |	D	|		Delay after each debugger output line. The argument is the delay, in tenths of seconds, subject to machine capabilities. For example, D,20 specifies a delay of two seconds.|
 |	f	|		Limit debugging, tracing, and profiling to the list of named functions. An empty list enables all functions. The appropriate d or t flags must still be given; this flag only limits their actions if they are enabled.|
@@ -96,7 +96,7 @@ DBUG参数首先以':'作为分割,其中field_n代表了某类选项，也就�
 ### 例子的解释
 
 | debug选项指定值 | 意义 |
-| --- | ---|
+| --- | --- |
 |```debug='d,error,warning:F:i:L:n:N:o,/tmp/mysqld.trace:t'``` | flag'd',error,warning生效<br>flag'F',打印源文件名称<br>flag'L',打印源代码所在行号<br>flag'o',输出文件位置,...|
 
 
@@ -153,7 +153,6 @@ static int process_io_rotate(Master_info *mi, Rotate_log_event *rev)
 
 ```
 
-其中DBUG的代码：
 
 | DEBUG代码| 含义 |
 | --- | --- | 
