@@ -18,8 +18,8 @@ MYSQL代码量比较大，掌握相应的DEBUG能力，对学习源码和故障�
 
 ## 问题一：MYSQL的TRACE使用什么包实现？它的功能是什么？
 
-MYSQL使用DBUG包TRACE服务器端和客户端的代码，在源码中已写入TRACE位置，可通过编译使用.<br>
-DBUG包允许你得到程序运行的trace文件，也可以通过加入DBUG代码，增加自己要跟踪的内容
+MYSQL使用DBUG包TRACE服务器端和客户端的代码，在源码中已写入TRACE位置，可通过编译使用.
+DBUG包允许你得到程序运行的trace文件，也可以通过加入DBUG代码，增加自己要跟踪的内容.
 > [MYSQL官方DBUG包介绍链接地址](https://dev.mysql.com/doc/refman/5.7/en/dbug-package.html)
 
 
