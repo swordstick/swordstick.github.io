@@ -154,10 +154,10 @@ static int process_io_rotate(Master_info *mi, Rotate_log_event *rev)
 ```
 
 
-| DEBUG代码| 含义 |
+| DEBUG代码 | 含义 |
 | --- | --- | 
-| DBUG_ENTER	|表示进入某个函数	|
-|DBUG_RETURN |	在return的基础上，表示退出某个函数|
+| DBUG_ENTER	| 表示进入某个函数	|
+| DBUG_RETURN |	在return的基础上，表示退出某个函数|
 | DBUG_PRINT	|	和printf差不多，打印调试信息|
 
 
@@ -165,6 +165,8 @@ static int process_io_rotate(Master_info *mi, Rotate_log_event *rev)
 
 >```debug="d:F:i:L:n:N:o,/tmp/mysqld.trace:t"```为例<br>
 >若指定位置没有mysqld.trace文件，请查看mysql的error文件
+
+
 
 ```
 T@5    :  1064:       slave.cc:  3678:    3: | | >process_io_rotate
