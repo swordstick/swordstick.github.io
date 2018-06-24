@@ -64,16 +64,23 @@ mysql> SET SESSION debug = 'debug_options';
 
 DBUG参数首先以':'作为分割,其中field_n代表了某类选项，也就是某类flag
 
- ```field_1:field_2:...:field_N```
+ ```
+ field_1:field_2:...:field_N
+ ```
 
 而field_n其再由','作为分割，指定该flag的参数
 
-```[+|-]flag[,modifier,modifier,...,modifier]```
+```
+[+|-]flag[,modifier,modifier,...,modifier]
+```
 
 > [+|-]指定代表在现有基础上调整<br>
 > [+|-]未指定代表随后list为明确指定
 
+
+
 ### 相关flag及modifier列表
+
 
 | Flag | Dscription | 
 | ---	| --- |
