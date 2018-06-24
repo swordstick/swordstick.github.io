@@ -26,7 +26,7 @@ DBUG包允许你得到程序运行的trace文件，也可以通过加入DBUG代�
 
 ## 问题二：如何启用DBUG？
 
-### 首先：源代码安装过程中，CMAKE编译时需要加上'-DWITH_DEBUG=1'
+#### 首先：源代码安装过程中，CMAKE编译时需要加上'-DWITH_DEBUG=1'
 
 
 
@@ -40,7 +40,7 @@ cmake \
 
 ```
 
-### 其次：在配置文件中加入debug选项
+#### 其次：在配置文件中加入debug选项
 
 | 配置文件加入内容 | 效果 | 意义 |
 | --- |--- |--- |
@@ -48,7 +48,7 @@ cmake \
 | debug="debug_options" | 指定debug值 | 按照debug_options参数来执行 |
 
 
-### 或者：在线修改debug参数
+#### 或者：在线修改debug参数
 
 ```
 mysql> SET GLOBAL debug = 'debug_options';
@@ -60,7 +60,7 @@ mysql> SET SESSION debug = 'debug_options';
 
 > 以```debug='d,error,warning:F:i:L:n:N:o,/tmp/mysqld.trace:t'```为例，其中d,error,F分别代表了什么？
 
-### 基本格式说明
+#### 基本格式说明
 
 DBUG参数首先以':'作为分割,其中field_n代表了某类选项，也就是某类flag
 
@@ -79,7 +79,7 @@ DBUG参数首先以':'作为分割,其中field_n代表了某类选项，也就�
 
 
 
-### 相关flag及modifier列表
+#### 相关flag及modifier列表
 
 
 | Flag | Dscription | 
@@ -100,7 +100,7 @@ DBUG参数首先以':'作为分割,其中field_n代表了某类选项，也就�
 |	S	|		Do function _sanity(_file_,_line_) at each debugged function until _sanity() returns something that differs from 0.|
 |	t	|		Enable function call/exit trace lines. May be followed by a list (containing only one modifier) giving a numeric maximum trace level, beyond which no output occurs for either debugging or tracing macros. The default is a compile time option.|
 
-### 例子的解释
+#### 例子的解释
 
 | debug选项指定值 | 意义 |
 | --- | --- |
@@ -109,7 +109,7 @@ DBUG参数首先以':'作为分割,其中field_n代表了某类选项，也就�
 
 ## 问题四：该如何查看trace日志
 
-### 观察源码的DBUG代码
+#### 观察源码的DBUG代码
 
 以复制函数```process_io_rotate```为例
 
@@ -168,7 +168,7 @@ static int process_io_rotate(Master_info *mi, Rotate_log_event *rev)
 | DBUG_PRINT	|	和printf差不多，打印调试信息|
 
 
-### 查看对应的TRACE内容
+#### 查看对应的TRACE内容
 
 >```debug="d:F:i:L:n:N:o,/tmp/mysqld.trace:t"```为例<br>
 >若指定位置没有mysqld.trace文件，请查看mysql的error文件
@@ -196,7 +196,7 @@ T@5    :  1080:       slave.cc:  4365:    3: | | | info: Format_description_log_
 T@5    :  1081:       slave.cc:  3716:    3: | | <process_io_rotate 3716
 ```
 
-### 对应关系
+#### 对应关系
 
 | DBUG代码/对应TRACE内容(上下行) |
 | ---  |
