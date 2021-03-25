@@ -69,7 +69,7 @@ tags:
 ```
 useradd mha -u 512 -G mysql -d /home/mha
 passwd mha
-//密码是kugoudba
+
 
 [root@Dev_10_16_4_33 mha]# groups mha
 mha : mha mysql
@@ -239,7 +239,7 @@ yum -y install perl-CPAN
 //若MHA安装过则此处不必采用
 //useradd mha -u 512 -G mysql -d /home/mha
 //passwd mha
-//测试密码为kugoudba
+
 
 mkdir -p /usr/local/mha
 chown -R mha:mysql /usr/local/mha
@@ -276,7 +276,7 @@ echo '/usr/local/share/perl5/MHA' >> /etc/ld.so.conf
 ```
 useradd mha -u 512 -G mysql -d /home/mha
 passwd mha
-//测试密码为kugoudba
+
 
 mkdir -p /usr/local/mha
 chown -R mha:mysql /usr/local/mha
